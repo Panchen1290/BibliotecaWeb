@@ -53,6 +53,19 @@ public class Tests {
 		DatabaseManager.eliminarSucursal("5");
 	}
 	
+	@Test
+	public void testAgregarBiblio() {
+		DatabaseManager.agregarBiblio("nnn", "ppp", "uuu");
+	}
 	
+	@Test
+	public void testEliminarBiblio() {
+		DatabaseManager.eliminarBiblio("uuu");
+	}
+	
+	@Test
+	public void testCambiarBiblio() {
+		DatabaseManager.cambiarBiblio("uuu", "NNN", "PPP");
+	}
 
 }
